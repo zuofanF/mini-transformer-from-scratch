@@ -5,7 +5,7 @@ A complete Transformer implementation from scratch for English-to-Japanese trans
 ## Author
 
 **Zuofan**
-- GitHub: [@your-username](https://github.com/zuofanF)
+- GitHub: [zuofan](https://github.com/zuofanF)
 - Focus: NLP, Machine Learning
 
 ---
