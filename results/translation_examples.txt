@@ -1,0 +1,39 @@
+=== Transformer Translation Examples ===
+
+Model: Mini Transformer (256d, 3 layers, 8 heads)
+Dataset: Tatoeba EN-JP (10K samples)
+Training: 30 epochs, ~5 minutes on Tesla T4 GPU
+
+--- Successful Translations ✅ ---
+
+English:  i love you
+Japanese: 私は大好きです。
+Status:   ✅ Correct
+
+English:  how are you
+Japanese: 元気ですか。
+Status:   ✅ Perfect!
+
+--- Partially Correct ⚠️ ---
+
+English:  hello
+Japanese: さあ、待って。
+Status:   ⚠️ Incorrect
+
+English:  thank you
+Japanese: お腹がとう。
+Status:   ⚠️ Mixed
+
+--- Failed ❌ ---
+
+English:  good morning
+Japanese: よくやった。
+Status:   ❌ Wrong
+
+=== Analysis ===
+
+Success Rate: 40% (2/5 perfect)
+Improvements needed:
+- Increase training data
+- Add early stopping
+- Use better tokenization
